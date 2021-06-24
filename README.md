@@ -8,4 +8,5 @@ Modified by me
 
 # How to install
 Simply use `git clone https://github.com/DeskieDevs/Discord.js-Version-13-Template.git`
+
 Then you have to do `npm init --y` followed by `npm install`
