@@ -1,5 +1,5 @@
 import { client } from "../index"
-import Discord from "discord.js"
+import Discord, { MessageComponentInteraction } from "discord.js"
 import { errorColor } from "../config.json"
 
 client.on("interaction", async interaction => {
