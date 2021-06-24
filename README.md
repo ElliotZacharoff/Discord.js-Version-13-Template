@@ -8,3 +8,4 @@ Modified by me
 
 # How to install
 Simply use `git clone https://github.com/DeskieDevs/Discord.js-Version-13-Template.git`
+Or press "Use Template" at the top of the page
