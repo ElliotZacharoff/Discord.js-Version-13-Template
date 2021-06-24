@@ -1,6 +1,0 @@
-node_modules/
-.env
-.idea/
-dist/
-.vscode/
-src/listeners/debug.ts
