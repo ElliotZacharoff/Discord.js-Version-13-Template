@@ -34,7 +34,7 @@ client.once("ready", async () => {
     })
     //Set guild commands - these don't need checks since they update instantly
     client.guilds.cache
-        .get("775097867453857803")!
+        .get("your guild-id")!
         .commands.set(constructDiscordCommands())
         .then(commands_ => commands_.forEach(async command => await setPermissions(command)))
 })
@@ -46,7 +46,7 @@ async function publishCommand(command: Command) {
         await setPermissions(cmd)
     } else {
         //Create a guild wide command
-        const cmd = await client.guilds.cache.get("775097867453857803")!.commands.create(convertToDiscordCommand(command))
+        const cmd = await client.guilds.cache.get("your guild-id")!.commands.create(convertToDiscordCommand(command))
         await setPermissions(cmd)
     }
     console.log(`Published command ${command.name}!`)
@@ -58,7 +58,7 @@ async function setPermissions(command: Discord.ApplicationCommand) {
     if (clientCmd.dev)
         permissions.push({
             type: "ROLE",
-            id: "768435276191891456", //Discord Staff
+            id: "role-id", //Discord Staff
             permission: true
         })
     else {

@@ -6,7 +6,7 @@ const command: Command = {
     name: "ping",
     description: "Relays the current client ping",
     allowDM: true,
-    channelWhitelist: ["830874699495374869"],
+    channelWhitelist: ["your channel-id here"],
     async execute(interaction: Discord.CommandInteraction) {
         const row = new MessageActionRow().addComponents(new MessageButton().setCustomID("refresh_btn").setStyle("SUCCESS").setLabel("Refresh"))
 
